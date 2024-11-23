@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --background-light: #F6F8F9;
+    --text-primary-light: #1A1A1F;
+    --text-secondary-light: #64646F;
+    --lapis-lazuli-light: #416788;
+    --coral-light: #F87060;
+
+    --background-dark: #242428;
+    --text-primary-dark: #E8E8E4;
+    --text-secondary-dark: #AEAEA6;
+    --lapis-lazuli-dark: #5884AA;
+    --coral-dark: #FF8574;
+}

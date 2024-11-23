@@ -10,8 +10,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'background-light': "var(--background-light)",
+        'text-primary-light': "var(--text-primary-light)",
+        'text-secondary-light': "var(--text-secondary-light)",
+        'lapis-lazuli-light': "var(--lapis-lazuli-light)",
+        'coral-light': "var(--coral-light)",
+
+        'background-dark': "var(--background-dark)",
+        'text-primary-dark': "var(--text-primary-dark)",
+        'text-secondary-dark': "var(--text-secondary-dark)",
+        'lapis-lazuli-dark': "var(--lapis-lazuli-dark)",
+        'coral-dark': "var(--coral-dark)",
       },
       fontFamily: {
         'space-grotesk': 'var(--font-space-grotesk)',
