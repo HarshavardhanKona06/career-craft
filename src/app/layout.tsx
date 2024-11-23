@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${workSans.variable} antialiased`} suppressHydrationWarning>
-      <body className="bg-background-light dark:bg-background-dark">
+      <body className="bg-background-light dark:bg-background-dark font-work-sans">
         <ThemeProvider
           attribute='class'
           defaultTheme='system'

@@ -1,11 +1,9 @@
-import CraftInProgress from "@/components/sections/craft-in-progress";
-import NavBar from "@/components/sections/nav-bar";
+import HomePage from "@/components/sections/home-page";
 
 export default function Home() {
   return (
-      <main className="font-work-sans">
-          <NavBar />
-          <CraftInProgress />
+      <main>
+        <HomePage />
       </main>
   );
 }
