@@ -4,13 +4,25 @@ import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTheme } from 'next-themes';
-import { ChevronDown, Settings, LogOut, LayoutDashboard, Briefcase, Users, CircleFadingPlus, Sun, Moon, Laptop } from 'lucide-react';
+import {
+    ChevronsUpDown,
+    Settings,
+    LogOut,
+    LayoutDashboard,
+    Briefcase,
+    Users,
+    CircleFadingPlus,
+    Sun,
+    Moon,
+    Laptop,
+    ChevronLeft
+} from 'lucide-react';
 
 const NavBar = () => {
     const navItems = [
         { id: 'dashboard', label: 'Career Dashboard', icon: LayoutDashboard, href: '/career-dashboard' },
         { id: 'applications', label: 'Applications', icon: Briefcase, href: '/applications' },
-        { id: 'network', label: 'Network', icon: Users, href: '/network' }
+        { id: 'networking', label: 'Networking', icon: Users, href: '/networking' }
     ];
 
     const [activeNav, setActiveNav] = useState('dashboard');
@@ -81,7 +93,7 @@ const NavBar = () => {
                                 <span className="ml-2 text-text-primary-light dark:text-text-primary-dark hidden md:inline">
                                     {navItems.find(item => item.id === activeNav)?.label}
                                 </span>
-                                <ChevronDown className="ml-1 h-4 w-4 text-text-secondary-light dark:text-text-secondary-dark" />
+                                <ChevronsUpDown className="ml-1 h-4 w-4 text-text-secondary-light dark:text-text-secondary-dark" />
                             </div>
                         </button>
                         {isNavOpen && (
@@ -159,7 +171,7 @@ const NavBar = () => {
                                         >
                                             <Sun className="mr-2 h-4 w-4 text-text-secondary-light dark:text-text-secondary-dark" />
                                             <span className="font-medium">Appearance</span>
-                                            <ChevronDown className="ml-auto h-4 w-4" />
+                                            <ChevronLeft className="ml-auto h-4 w-4" />
                                         </button>
                                         {isAppearanceOpen && (
                                             <div className="absolute right-full top-0 mt-0 mr-1 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5">

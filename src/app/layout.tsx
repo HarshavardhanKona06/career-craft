@@ -6,7 +6,7 @@ import { spaceGrotesk, workSans } from "@/lib/font";
 import { ThemeProvider } from "@/app/theme-provider";
 
 export const metadata: Metadata = {
-  title: "CareerCraft",
+  title: 'CareerCraft',
   description: "Streamline your job search and professional networking with an intelligent tracking system.",
 };
 
